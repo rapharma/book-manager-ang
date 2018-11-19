@@ -1,0 +1,22 @@
+{
+  "books": [
+    {
+      "name": "The Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "publisher": "Pottermore",
+      "id": 1
+    },
+    {
+      "name": "The Fellowship of the Ring",
+      "author": "J. R. R. Tolkien",
+      "publisher": "Allen & Unwin",
+      "id": 2
+    },
+    {
+      "name": "The Prisioner of Azkaban",
+      "author": "J. K. Rowling",
+      "publisher": "Pottermore",
+      "id": 3
+    }
+  ]
+}

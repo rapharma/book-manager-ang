@@ -1,0 +1,27 @@
+<a routerLink='/book'><input type="submit" class="btn btn-primary" value="+ Add a New Book"></a>
+
+<h3 *ngIf="books.length > 0">
+    Books
+</h3>
+<div class="table-responsive">
+
+    <table class="table" *ngIf="books.length > 0">
+        <th class="mbg-column">Name</th>
+        <th class="mbg-column">Author</th>
+        <th class="mbg-column">Publisher</th>
+        <th class="mbg-column option-column">Delete</th>
+        <th class="mbg-column option-column">Edit</th>
+        <tr *ngFor="let book of books">
+            <td>{{book.name}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.publisher}}</td>
+            <td (click)="deleteBook(book.id)">
+                <a><input type="submit" value="Delete" class="btn btn-danger"></a>
+            </td>
+            <td [routerLink]="['/updateBook', book.id]">
+                <a><input type="submit" value="Update" class="btn btn-primary"></a>
+            </td>
+        </tr>
+    </table>
+</div>
+<p *ngIf="!books.length > 0">No books : /</p>
