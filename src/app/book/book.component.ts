@@ -27,18 +27,18 @@ export class BookComponent implements OnInit {
   
     this.genericServ.executeGet().subscribe((res: Book[]) => { 
       this.books = res;
-      console.log('res get' + JSON.stringify(this.books)) }
+    }
+
     );
 
   }
    
   deleteBook(id) {
-    if (confirm("Are you sure?")) {
-      
+    if (confirm("Are you sure?")) { 
+
       this.genericServ.executeDelete(id).subscribe(() => {
-      console.log('deleted')
-      
-    });
+        console.log('deleted')
+      });
 
     }
     
