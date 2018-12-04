@@ -13,7 +13,7 @@ export class GenericService {
  
   private _headers = new Headers({ 'Content-Type': 'application/json' });
   id: number; 
-  bookData: object = {};
+  bookData = new Book();
 
   constructor(private http: Http) 
   { }
