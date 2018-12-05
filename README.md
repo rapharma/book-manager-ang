@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `npm install` to install the dependencies.
 
-## Development server
+## Development
 
 Run `ng serve` for a dev server to run the project. Navigate to `http://localhost:4200/`.
 
