@@ -10,4 +10,4 @@ Run `npm install` to install the dependencies.
 
 Run `ng serve` for a dev server to run the project. Navigate to `http://localhost:4200/`.
 
-Run `json-server books.json --port 5200` on data directory to run the API.
+Run `json-server books.json --port 5200` on /data folder to run the API.
