@@ -8,6 +8,6 @@ Run `npm install` to install the dependencies.
 
 ## Development
 
-For the Angular application run `ng serve`. Navigate to `http://localhost:4200/`.
+For the Angular application you can run `ng serve`. So navigate to `http://localhost:4200/`.
 
-For the Server go to /data directory and run `json-server books.json --port 5200` to run the API.
+For the Server API you can go to /data directory and run `json-server books.json --port 5200`. So navigate to `http://localhost:5200/books`
