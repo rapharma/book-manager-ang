@@ -12,8 +12,6 @@ import { AboutComponent } from './about/about.component';
 import { GenericService } from './services/generic.service';
 import { MockBackend } from '@angular/http/testing';
 //import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { mockData } from 'app/services/mock-data/mock-data'; 
-import { LoginComponent } from 'app/login/login.component';
 
 @NgModule({
   declarations: [
@@ -33,15 +31,12 @@ import { LoginComponent } from 'app/login/login.component';
       {path: "book", component: AddBookComponent},
       {path: "updateBook/:id", component: UpdateBookComponent},
       {path: "about", component: AboutComponent},
-      {path: "login", component: LoginComponent}
     ]),
     
   ],
   providers: [
     GenericService,
-    MockBackend,
     BaseRequestOptions,
-    {provide: Http, useFactory: MockBackend, deps: [MockBackend, BaseRequestOptions]}
   ],
   bootstrap: [AppComponent]
 })
