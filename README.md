@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Instalation
 
 Run `npm install` to install the general dependencies.
+
 Run `npm i -g json-server` to insall server dependencie.
 
 ## Development
